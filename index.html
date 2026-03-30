@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheating Ecosystem Simulation - Project by Alrwad High School</title>
+    <!-- Modern Tech Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&family=Tajawal:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body class="dark-theme">
+
+    <div class="background-effects">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+    </div>
+
+    <nav class="navbar glass-nav">
+        <div class="nav-container">
+            <a href="#hero" class="brand">
+                <i data-lucide="cpu" class="brand-icon"></i>
+                <span data-i18n="brand_name">M.Z.S.AI</span>
+            </a>
+
+            <div class="nav-links">
+                <a href="#about" data-i18n="nav_about">About</a>
+                <a href="#videos" data-i18n="nav_videos">Videos</a>
+                <a href="#features" data-i18n="nav_features">Features</a>
+                <a href="#research" data-i18n="nav_research">Research</a>
+                <a href="#sources" data-i18n="nav_sources">Sources</a>
+                <a href="#team" data-i18n="nav_team">Team</a>
+                <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
+                <a href="#contact" data-i18n="nav_contact" class="btn-outline">Contact</a>
+                <button id="langToggle" class="btn-lang" aria-label="Toggle language">
+                    <i data-lucide="globe"></i> <span id="currentLang">العربية</span>
+                </button>
+            </div>
+
+            <button class="mobile-menu-btn" aria-label="Open menu">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay glass-card">
+        <button class="close-menu-btn" aria-label="Close menu">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="mobile-nav-links">
+            <a href="#about" data-i18n="nav_about" class="mobile-link">About</a>
+            <a href="#videos" data-i18n="nav_videos" class="mobile-link">Videos</a>
+            <a href="#features" data-i18n="nav_features" class="mobile-link">Features</a>
+            <a href="#research" data-i18n="nav_research" class="mobile-link">Research</a>
+            <a href="#sources" data-i18n="nav_sources" class="mobile-link">Sources</a>
+            <a href="#team" data-i18n="nav_team" class="mobile-link">Team</a>
+            <a href="#gallery" data-i18n="nav_gallery" class="mobile-link">Gallery</a>
+            <a href="#contact" data-i18n="nav_contact" class="btn-outline mobile-link">Contact</a>
+            <button id="mobileLangToggle" class="btn-lang mobile-link">
+                <i data-lucide="globe"></i> <span id="mobileCurrentLang">العربية</span>
+            </button>
+        </div>
+    </div>
+
+    <main>
+        <!-- 1. Hero Section -->
+        <section id="hero" class="hero section-padding">
+            <div class="container hero-content reveal">
+                <h1 class="hero-title" data-i18n="hero_title">Providing a Fair <span class="gradient-text">Testing
+                        Environment</span></h1>
+                <p class="hero-desc" data-i18n="hero_desc">A project that provides a fair testing
+                    environment and ensures grading fairness and control
+                </p>
+                <div class="hero-actions">
+                    <a href="#about" class="btn-primary" data-i18n="btn_explore">About the Project</a>
+                    <a href="#videos" class="btn-secondary" data-i18n="btn_watch">Watch Videos <i
+                            data-lucide="play-circle"></i></a>
+                </div>
+
+                <div class="hero-visual glass-card reveal delay-1">
+                    <!-- Placeholder for highly technical hero graphic/video -->
+                    <div class="tech-mockup">
+                        <div class="mockup-header">
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <div class="mockup-body">
+                           <img src="images/image.png" alt="">
+                            <!-- <p data-i18n="hero_mockup_text">System Monitoring Activity...</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. About the Project -->
+        <section id="about" class="about section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="about_title">About the Project</h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-card glass-card reveal">
+                        <i data-lucide="network" class="card-icon text-orange"></i>
+                        <h3 data-i18n="about_card1_title">The Idea</h3>
+                        <p data-i18n="about_card1_desc">This project aims to streamline cheating detection, provide a
+                            fairer environment, reduce the number of proctors, and ensure fairness for students.</p>
+                    </div>
+
+                    <div class="about-card glass-card reveal delay-1">
+                        <i data-lucide="alert-triangle" class="card-icon text-purple"></i>
+                        <h3 data-i18n="about_card2_title">Importance</h3>
+                        <p data-i18n="about_card2_desc">Cheating diminishes the value of education and harms the future
+                            of students and society. Maintaining academic integrity ensures real skill development and
+                            strengthens trust between students and teachers.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Videos Section -->
+        <section id="videos" class="videos section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="videos_title">Project Demo Videos</h2>
+                </div>
+
+                <div class="video-grid">
+                    <!-- Video Placeholders -->
+                    <div class="video-container glass-card reveal">
+                        <div class="video-player-wrapper">
+                            <video controls class="html-video-player">
+                                <source src="videos/eyes.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <h4 data-i18n="video1_title">Technology Demo</h4>
+                        </div>
+                    </div>
+                    <div class="video-container glass-card reveal">
+                        <div class="video-player-wrapper">
+                            <video controls class="html-video-player">
+                                <source src="videos/follow.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                        <div class="video-info">
+                            <h4 data-i18n="video1_title">System Demo</h4>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Features Section -->
+
+
+        <!-- 5. Research & Sources -->
+        <section id="research" class="research section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="research_title">Research & Studies</h2>
+                </div>
+
+                <div class="research-grid">
+                    <a href="https://pubmed.ncbi.nlm.nih.gov/29596538/" target="_blank"
+                        class="research-card glass-card reveal hover-lift">
+                        <div class="card-badge" data-i18n="badge_study">Study</div>
+                        <h3 data-i18n="res1_title">Self-reported cheating among medical students</h3>
+                        <p data-i18n="res1_desc">Academic misconduct/dishonesty has become widespread behavior among
+                            many university students across the globe, and medical education is not an exception.</p>
+                        <span class="read-more" data-i18n="btn_read_source">Read Source <i
+                                data-lucide="arrow-right"></i></span>
+                    </a>
+
+                    <a href="https://link.springer.com/article/10.1007/s40979-021-00095-5" target="_blank"
+                        class="research-card glass-card reveal delay-1 hover-lift">
+                        <div class="card-badge" data-i18n="badge_article">Article</div>
+                        <h3 data-i18n="res2_title"> Elements of academic integrity in a cross-cultural middle eastern
+                            educational system: Saudi Arabia, Egypt, and Jordan case study </h3>
+                        <p data-i18n="res2_desc">Academic integrity is the expectation that members of the academic
+                            community, including researchers, teachers, and students, to act with accuracy, honesty,
+                            fairness, responsibility, and respect. Academic integrity is an issue of critical importance
+                            to academic institutions and has been gaining increasing interest among scholars in the last
+                            few years. While contravening academic integrity is known as academic misconduct, cheating
+                            is one type of academic misconduct and is generally defined as “any action that dishonestly
+                            or unfairly violates rules of research or education.</p>
+                        <span class="read-more" data-i18n="btn_read_source">Read Source <i
+                                data-lucide="arrow-right"></i></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5.5 Sources Section -->
+        <section id="sources" class="sources section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="sources_title">Sources</h2>
+                    <p data-i18n="sources_subtitle">Experts and references that contributed to our research.</p>
+                </div>
+
+                <div class="sources-grid">
+                    <div class="source-card glass-card reveal delay-1 hover-lift">
+                        <div class="source-header">
+                            <div class="source-photo placeholder">JO</div>
+                            <div>
+                                <h3 data-i18n="source_2_name">Jason Orlosky</h3>
+                                <p data-i18n="source_2_role">Ph.D. in Educational Psychology</p>
+                            </div>
+                        </div>
+                        <p class="source-desc" data-i18n="source_2_desc">I find innovative ways to help people through
+                            AR, eye tracking, and Computer Vision research.</p>
+
+                        <div class="source-socials">
+                            <a href="https://www.youtube.com/@jeoresearch" target="_blank" class="social-icon"><i
+                                    class="fa-brands fa-github"></i></a>
+                            <a href="https://github.com/JEOresearch" target="_blank" class="social-icon"><i
+                                    class="fa-brands fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="additional-sources reveal delay-2">
+                    <ul class="sources-list">
+                        <li><i data-lucide="book-open"></i> <span>brief history</span></li>
+                        <li><i data-lucide="book-open"></i> <span> B.S. Computer Engineering at Georgia Tech</span></li>
+                        <li><i data-lucide="book-open"></i> <span>Technology Engineer in Healthcare IT</span></li>
+                        <li><i data-lucide="book-open"></i> <span>Studied Japanese Language at UGA</span></li>
+                        <li><i data-lucide="book-open"></i> <span>PhD and then researcher at Osaka University</span>
+                        </li>
+                        <li><i data-lucide="book-open"></i> <span>Professor at Augusta University</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Our Team -->
+        <section id="team" class="team section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="team_title">Our Team</h2>
+                    <p class="school-name gradient-text" data-i18n="school_name">Alrwad High School</p>
+                </div>
+
+                <div class="team-intro glass-card reveal">
+                    <i data-lucide="users" class="large-icon text-purple"></i>
+                    <p data-i18n="team_intro">A group of students at Alrwad High School worked together to build a simulation project to eliminate and reduce cheating.</p>
+                </div>
+
+                <div class="team-grid">
+                    <!-- Team Members -->
+                    <div class="team-member reveal">
+                        <div class="member-photo placeholder">M</div>
+                        <h4 data-i18n="member_mostafa">Mostafa</h4>
+                    </div>
+                    <div class="team-member reveal delay-1">
+                        <div class="member-photo placeholder">O</div>
+                        <h4 data-i18n="member_osama">Osama</h4>
+                    </div>
+                    <div class="team-member reveal delay-2">
+                        <div class="member-photo placeholder">A</div>
+                        <h4 data-i18n="member_abdalziz">Abdalziz</h4>
+                    </div>
+                    <div class="team-member reveal delay-1">
+                        <div class="member-photo placeholder">Mo</div>
+                        <h4 data-i18n="member_mohamed">Mohamed</h4>
+                    </div>
+                    <div class="team-member reveal">
+                        <div class="member-photo placeholder">H</div>
+                        <h4 data-i18n="member_hamed">Hamed</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. Gallery -->
+        <section id="gallery" class="gallery section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 data-i18n="gallery_title">Project Gallery</h2>
+                </div>
+
+                <div class="gallery-grid">
+                    <div class="gallery-item glass-card reveal">
+                        <div class="gallery-placeholder"><img src="images/img1.png" alt=""></div>
+                    </div>
+                    <div class="gallery-item glass-card reveal delay-1">
+                        <div class="gallery-placeholder"><img src="images/img2.png" alt=""></div>
+                    </div>
+                    <div class="gallery-item glass-card reveal delay-2">
+                        <div class="gallery-placeholder"><img src="images/img3.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 8. Contact / Footer -->
+        <footer id="contact" class="footer">
+            <div class="container">
+                <div class="footer-grid reveal">
+                    <div class="footer-brand">
+                        <h3 class="gradient-text"><i data-lucide="cpu" class="inline-icon"></i> <span
+                                data-i18n="brand_name">M.Z.S.AI</span></h3>
+                        <p data-i18n="footer_tagline">Building awareness for a better educational future.</p>
+                    </div>
+
+                    <div class="contact-info">
+                        <h4 data-i18n="contact_title">Get In Touch</h4>
+                        <ul>
+                            <li><i data-lucide="map-pin"></i> <span data-i18n="school_name"><a href="https://wa.me/966582324562" target="_blank">058 232 4562</a></span>
+                            </li>
+                            <li><i data-lucide="mail"></i><a href="mailto:mostafaroaud2006@gmail.com" target="_blank">mostafaroaud2006@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; <span id="year">2026</span> M.Z.S.AI Project. Alrwad High School.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="js/translations.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+        // Initialize Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
